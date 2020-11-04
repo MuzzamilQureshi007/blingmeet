@@ -16,8 +16,8 @@
         <div class="page-content">
             <div class="landing-wrapper">
                 <div class="landing-logo" style="margin-top: -50px;">
-                    <div class="brick box-shadow-credits" style="width: 160px;height: 160px;background: #fff;bottom: 50px;border-color:none" ng-click="pick()">
-                        <div class="brick__image" id="photo-upload" style="border-color:none;background-color:#fafafa;background-image: url('img/no_user.png')"></div>
+                    <div class="brick box-shadow-credits" style="width: 160px;height: 160px;background: #d1d1d1;bottom: 50px;border-color:none" ng-click="pick()">
+                        <div class="brick__image" id="photo-upload" style="border-color:none;background-color:#d1d1d1;background-image: url('img/avator1.png')"></div>
                     </div>                
                 </div>
                 <div class="landing-actions" style="margin-top: 80px">
@@ -26,22 +26,22 @@
                         <ul class="list-view ">
                           <li class="list-item-form" style="border:none">
                             <label for="signin-name comforta">{{alang[158].text}}</label>
-                            <input ng-model="user.reg_name" placeholder="" name="name" type="text" autocapitalize="off" style="background: #fafafa;border-radius: 8px;padding-left: 10px;">
+                            <input ng-model="user.reg_name" placeholder="" name="name" type="text" autocapitalize="off" style="background:none;border-bottom: 2px solid white;padding-left: 10px;">
                           </li>
                           <li class="list-item-form" style="border:none;">
                             <label for="signin-name comforta">{{lang[331].text}}</label>
-                            <input ng-model="user.reg_username" placeholder="" ng-keyup="checkUsername(user.reg_username)" name="username" type="text" autocapitalize="off" style="background: #fafafa;border-radius: 8px;padding-left: 10px;">
+                            <input ng-model="user.reg_username" placeholder="" ng-keyup="checkUsername(user.reg_username)" name="username" type="text" autocapitalize="off" style="background:none;border-bottom: 2px solid white;padding-left: 10px;">
                             <div style="position:relative;min-height:25px;height:auto;text-align: left !important;">
                               <small class="comforta" style="text-align: left !important;">{{profileUrl}}@<strong>{{profileUsername}}</strong></small>
                             </div>
                           </li>                                                  
                           <li class="list-item-form" style="border:none">
                             <label for="signin-name">{{alang[149].text}}</label>
-                            <input ng-model="user.reg_email" placeholder="" name="email" type="email"  autocapitalize="off" style="background: #fafafa;border-radius: 8px;padding-left: 10px;">
+                            <input ng-model="user.reg_email" placeholder="" name="email" type="email"  autocapitalize="off" style="background:none;border-bottom: 2px solid white;padding-left: 10px;">
                           </li>
                           <li class="list-item-form" style="border:none">
                             <label for="signin-password comforta">{{alang[150].text}}</label>
-                            <input type="password" id="regpass" ng-model="user.reg_pass" ng-keyup="count = $count + 1" ng-init="count=0" ng-minlength="4" style="background: #fafafa;border-radius: 8px;padding-left: 10px;" required>
+                            <input type="password" id="regpass" ng-model="user.reg_pass" ng-keyup="count = $count + 1" ng-init="count=0" ng-minlength="4" style="background:none;border-bottom: 2px solid white;padding-left: 10px;" required>
                           </li>
                                
                         </ul>
@@ -49,7 +49,7 @@
                             <div class="login-loader" style="margin-bottom: 40px;" ng-if="regBtn">
                               <center><div class="loader02"></div></center>
                             </div>                        
-                            <button class="button button--secundary a" ng-class="{active: isActive}" ng-if="!regBtn" ng-click="next(user)">
+                            <button class="button button--secundary a" ng-class="{active: isActive}" ng-if="!regBtn" ng-click="next(user)" style="color: white;">
                             <div class="button__content"><span class="button__text">{{nexttext}}</span></div></button>
                           
 
@@ -57,7 +57,7 @@
                     </div>
                 </div>
                 <div class="landing-footer">
-                  <span ng-click="goTo('home.welcome','left','')">{{alang[155].text}}</span>
+                  <span ng-click="goTo('home.welcome','left','')" style="font-size: 18px;">{{alang[155].text}}</span>
                 </div>
             </div>
         </div>

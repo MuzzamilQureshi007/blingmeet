@@ -4596,7 +4596,8 @@ a.subdued:last-child {
 }
 
 .action-sheet-options {
-    background: #f1f2f3
+    background: #f1f2f3;
+    border-radius: 15px;
 }
 
 .action-sheet-cancel .button {

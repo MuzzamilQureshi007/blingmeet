@@ -7760,6 +7760,10 @@ body.android .button {
     content: ''
 }
 
+.action-sheet .action-sheet-group{
+    border-radius: 15px;
+}
+
 .old-android-webkit .inline-button {
     width: 100%
 }
