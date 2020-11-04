@@ -1079,9 +1079,10 @@ body.android-font-roboto-new .list-view .list-item-title {
 }
 
 .list-view .list-item-form {
-    position: relative;
-    padding: 5px 15px 5px 125px;
-    min-height: 46px
+    min-height: 46px;
+    background: none;
+    display: flex;
+    flex-direction: column;
 }
 
 .list-view .list-item-form.no-label {
@@ -1089,15 +1090,17 @@ body.android-font-roboto-new .list-view .list-item-title {
 }
 
 .list-view .list-item-form>label {
-    position: absolute;
     left: 15px;
-    width: 105px;
+    width: 65px;
     height: 36px;
     font-weight: 600;
     line-height: 36px;
     text-align: left;
     white-space: nowrap;
-    overflow: hidden
+    overflow: hidden;
+    color: white;
+    text-align: center;
+    font-size: 15px;
 }
 
 body.ios-font-helvetica .list-view .list-item-form>label {
@@ -1117,8 +1120,9 @@ body.android-font-roboto-new .list-view .list-item-form>label {
     display: block;
     padding: 0;
     width: 100%;
+    color: white;
     height: 36px;
-    text-overflow: ellipsis
+    text-overflow: ellipsis;
 }
 
 .list-view .list-item-form .location-select>input {
@@ -3588,6 +3592,10 @@ ul.marked {
     -webkit-flex-direction: column;
     -ms-flex-direction: column;
     flex-direction: column;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-image: url(../img/bg\ main.png);
     -webkit-box-pack: justify;
     -webkit-justify-content: space-between;
     -ms-flex-pack: justify;
@@ -7757,7 +7765,8 @@ body.android .button {
 }
 
 .inline-button__text {
-    pointer-events: none
+    pointer-events: none;
+    color: white;
 }
 
 .inline-button--primary {
@@ -8100,7 +8109,10 @@ body.android-font-roboto-new .features-list__item-details-summary {
 .cta-box .button-wrapper>.button,
 .cta-box .button-wrapper>.button-row {
     max-width: none;
-    margin: 0
+    margin: 0;
+    border-radius: 25px;
+    background: rgb(242,48,113);
+    background: linear-gradient(74deg, rgba(242,48,113,1) 0%, rgba(244,120,91,1) 100%)!important;
 }
 
 .cta-box .button-wrapper>.button+.button,
