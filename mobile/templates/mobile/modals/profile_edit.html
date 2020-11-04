@@ -65,18 +65,18 @@
       <div class="item item-divider b-none text-u-c comforta" data-lid="135"></div>
 	 
       <div class="item" >
-	    <span data-lid="26"></span>
+	    <span data-lid="26" ></span>
 		<input style="font-size:16px;display:inline-table;border:none;background:none;float:right;text-align:right;" id="userName" value="{{name}}"/>
       </div>
 	  
       <div class="item" >
 	    <span data-lid="300"></span>
-		<input style="margin:0;padding:0;font-size:16px;display:inline-table;border:none;background:none;float:right;text-align:right;"  id="userAge" value="{{age}}"/>
+		<input style="margin:0;padding:0;font-size:21px;font-weight: 600; display:inline-table;border:none;background:none;float:right;text-align:right;"  id="userAge" value="{{age}}"/>
       </div>
 
       <div class="item item-toggle" ng-click="updateUserGender()">
 	    <span data-lid="34"></span>
-		<label class="toggle" style="font-size:16px;top:14px;">
+		<label class="toggle" style="font-size:21px;font-weight: 700; top:14px;">
 			<span>{{gender}}</span>
 		</label>
       </div>
@@ -85,7 +85,7 @@
           <span>{{q.question}}</span>
             <label class="toggle" style="font-size:16px;top:14px;" >
           <span ng-if="q.userAnswer != ''" class="userAnswer{{q.id}}"  style="color: #111">{{q.userAnswer}}</span>
-          <span ng-if="q.userAnswer == ''" class="userAnswer{{q.id}}" style="color: #999">{{noData}}</span>
+          <span ng-if="q.userAnswer == ''" class="userAnswer{{q.id}}" style="color: #999; font-size: 21px;">{{noData}}</span>
             </label> 
         </div> 
 
@@ -120,7 +120,8 @@
         {{alang[94].text}}
         <label class="toggle toggle-assertive">
           <input type="checkbox" ng-checked="matches" ng-model="matches"  ng-click="updateNotification('match_me',matches)">
-          <div class="track">
+          <div class="track" style="    border-color: #f23071!important;
+          background-color: #f23071!important;">
             <div class="handle"></div>
           </div>
         </label>
@@ -129,7 +130,8 @@
         {{alang[95].text}}
         <label class="toggle toggle-assertive">
           <input type="checkbox" ng-checked="fans" ng-model="fans"  ng-click="updateNotification('fan',fans)">
-          <div class="track">
+          <div class="track" style="    border-color: #f23071!important;
+          background-color: #f23071!important;">
             <div class="handle"></div>
           </div>
         </label>
@@ -138,7 +140,8 @@
         {{alang[96].text}}
         <label class="toggle toggle-assertive">
           <input type="checkbox" ng-checked="messages" ng-model="messages"  ng-click="updateNotification('message',messages)">
-          <div class="track">
+          <div class="track" style="    border-color: #f23071!important;
+          background-color: #f23071!important;">
             <div class="handle"></div>
           </div>
         </label>
@@ -149,7 +152,8 @@
         {{alang[207].text}}
         <label class="toggle toggle-assertive">
           <input type="checkbox" ng-checked="near_me" ng-model="near_me"  ng-click="updateNotification('near_me',near_me)">
-          <div class="track">
+          <div class="track" style="    border-color: #f23071!important;
+          background-color: #f23071!important;">
             <div class="handle"></div>
           </div>
         </label>
@@ -183,7 +187,7 @@
           <i class="icon ion-chevron-right"></i>
         </span>
       </div>      
-      <div class="item comforta"  ng-click="deleteProfile()" style="background:#eee;color: #dc3545">
+      <div class="item comforta"  ng-click="deleteProfile()" style="background:#eee;color: #dc3545; font-weight: 700;">
         {{alang[276].text}}
         <span class="item-note">
           <i class="icon ion-chevron-right"></i>

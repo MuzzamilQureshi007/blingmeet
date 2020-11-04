@@ -7759,7 +7759,17 @@ body.android .button {
     left: -5px;
     content: ''
 }
-
+.shape{
+    position: absolute;
+    background-color: black;
+    height: 300px;
+    width: 100%;
+    z-index: 1;
+    border-radius: 10% 10% 48% 51% / 0% 0% 31% 31%;
+    background: rgb(255,89,104);
+    background: linear-gradient(3deg, rgba(255,89,104,1) 0%, rgba(255,0,131,1) 100%);
+    box-shadow: 0px 3px 6px rgb(0, 0, 0,0.5);
+}
 .action-sheet .action-sheet-group{
     border-radius: 15px;
 }

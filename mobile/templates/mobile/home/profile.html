@@ -34,8 +34,10 @@
   <ion-content  delegate-handle="modalContent" scroll="true" class="vivify fadeIn">
 <div class="page own-profile visible " style="z-index: 600;">
     <div>
+        <div class="shape"></div>
         <div class="layout layout--centered-content h-tabbar-affected own-profile-abtest-control">
             <div class="layout__content" style="margin-top:95px;height: 270px">
+                
                 <div class="own-profile__userpic" style="margin-top: -65px;" ng-click="openProfileStory(me)">
                     <div class="brick brick--stretch " style="display: inline-table">
                         <div class="brick__image box-shadow-credits" ng-class="showStory ? 'storyOn' : ''" style="background-image: url('{{me.profile_photo}}');border-radius: 70px"></div>
@@ -85,7 +87,7 @@
                 <div class="selector " ng-click="goTo('home.visitors');">
                     <div class="selector__label comforta" data-lid="286"></div>
                     <div class="selector__icon " style="margin-right: 5px;">
-                        <small class="comforta gradient8" ng-if="me.newVisits > 0" style="color: #fff;padding:5px 10px 5px 10px;border-radius: 3px;">{{alang[261].text}}</small>
+                        <small class="comforta gradient6" ng-if="me.newVisits > 0" style="color: #fff;padding:5px 10px 5px 10px;border-radius: 3px;">{{alang[261].text}}</small>
                         <span style="font-weight: 700" ng-if="me.newVisits == 0">{{me.totalVisits}}</span>
                     </div>
                 </div>  
@@ -93,7 +95,7 @@
                 <div class="selector " ng-click="goTo('home.likesme');">
                     <div class="selector__label comforta" data-lid="101"></div>
                     <div class="selector__icon" style="margin-right: 5px;">
-                        <small class="comforta gradient8" ng-if="me.newFans > 0" style="color: #fff;padding:5px 10px 5px 10px;border-radius: 3px;">{{alang[261].text}}</small>
+                        <small class="comforta gradient6" ng-if="me.newFans > 0" style="color: #fff;padding:5px 10px 5px 10px;border-radius: 3px;">{{alang[261].text}}</small>
                         <span style="font-weight: 700" ng-if="me.newFans == 0">{{me.totalFans}}</span>
                     </div>
                 </div> 
