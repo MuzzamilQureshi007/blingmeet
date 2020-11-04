@@ -1663,9 +1663,9 @@ function welcomeMailNotification($user_name,$user_email,$user_password){
 	$message = str_replace('$user_email', $user_email, $message);
 	$message = str_replace('$user_pass', $user_password, $message);
 	$message = str_replace('$site_logo', $sm['config']['logo'], $message);
-	$message = str_replace('$randomPhoto1', randomPhotoUser($sm['user']['s_gender']), $message);
-	$message = str_replace('$randomPhoto2', randomPhotoUser($sm['user']['s_gender']), $message);
-	$message = str_replace('$randomPhoto3', randomPhotoUser($sm['user']['s_gender']), $message);		
+	//$message = str_replace('$randomPhoto1', randomPhotoUser($sm['user']['s_gender']), $message);
+	//$message = str_replace('$randomPhoto2', randomPhotoUser($sm['user']['s_gender']), $message);
+	//$message = str_replace('$randomPhoto3', randomPhotoUser($sm['user']['s_gender']), $message);		
 	$message = str_replace('$site_open', $sm['config']['site_url'], $message);	
 	$message = str_replace('$site_name', $sm['config']['name'], $message);
 	$message = str_replace('$site_email', $sm['plugins']['settings']['siteEmail'], $message);
