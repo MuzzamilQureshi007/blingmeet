@@ -61,7 +61,7 @@
                         </div>
                     </div>
                     <div class="profile-preview__info">
-                        <div class="profile-info">
+                        <div class="profile-info" style="box-shadow: 10px 20px 110px 50px white;">
                             <div class="profile-info__section">
                                 <div data-view-id="81">
                                     <div class="profile-info__title">
@@ -82,22 +82,22 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="profile-info__section vrt-personal-info" style="margin-top: 20px">
+                            <div class="profile-info__section vrt-location" >
+                                <div data-view-id="95">
+                                    <div class="profile-info__content   js-profile-section">
+                                        <div>{{city}}, {{country}}</div>
+                                    </div>
+                                </div>
+                            <div class="profile-info__section vrt-personal-info" style="display: flex;justify-content: space-between; align-items: center;width: 100%;">
                                 <div data-view-id="87">
-                                    <div class="profile-info__title comforta" style="font-size: 21px; font-weight: 600;">{{alang[170].text}}</div>
+                                    <div class="profile-info__title comforta" style="font-size: 21px; font-weight: 600; padding: 20px 0px;width: 50%;display: flex;justify-content: center;align-items: center;">{{alang[170].text}}</div>
                                     <div class="profile-info__content comforta">
                                         <p ng-bind-html="unEntity(bio) | nl2br"></p>
                                     </div>
                                 </div>
                             </div>
 
-                            <div class="profile-info__section vrt-location" >
-                                <div data-view-id="95">
-                                    <div class="profile-info__title" style="font-size:21px;font-weight: 600;">{{alang[239].text}}</div>
-                                    <div class="profile-info__content   js-profile-section">
-                                        <div>{{city}}, {{country}}</div>
-                                    </div>
-                                </div>
+                            
                             </div>                            
                             <div class="profile-info__section" >
                                 <div class="profile-info__title comforta" style="font-size: 21px;font-weight: 600; text-align: center;">{{alang[238].text}}</div>
@@ -119,10 +119,10 @@
                             </div>
 
 
-
-                            <div class="profile-info__section vrt-personal-info" ng-repeat="q in question" ng-if="q.userAnswer !== ''">
-                                <div class="profile-info__title" style="text-align: center; font-size: 21px;font-weight: 600;padding-top: 20px;" >{{q.question}}</div>
-                                <div class="profile-info__content  js-profile-section">
+                            <div class="info-heading">Profile Basics</div>
+                            <div class="profile-info__section vrt-personal-info" ng-repeat="q in question" ng-if="q.userAnswer !== ''" style="display: flex;justify-content: center;align-items: center;width: 100%; padding-top: 20px;">
+                                <div class="profile-info__title" style="padding: 30px 0px 0px 0px; font-size: 21px;font-weight: 600;display: flex;width: 50%;justify-content: flex-start;align-items: center;" >{{q.question}}</div>
+                                <div class="profile-info__content  js-profile-section" style="width: 50%;display: flex;justify-content: flex-end;align-items: center;">
                                     <p>{{q.userAnswer}}</p>
                                 </div>
                             </div>

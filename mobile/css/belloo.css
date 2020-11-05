@@ -7751,6 +7751,13 @@ body.android .button {
     color: #9aa3ab
 }
 
+.flex-box-user{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 .inline-button::after {
     position: absolute;
     top: -5px;
@@ -21936,6 +21943,8 @@ body.android .profile-title.with-badge .profile-badge .profile-badge__text {
 .page.security-complete-email .form-uniform .input {
     margin: 0 3px
 }
+
+
 
 .page.encounters-extra-shows .profile-top-section {
     color: #fff;

@@ -7,10 +7,10 @@
       <div class="row">
         <div class="col col-66">
             <div class="photo-pickable"  ng-if="uphotos[0] == null" >
-              <div class="w-full r-3x profileP" ng-click="pick()" style="height:200px;background-color:#f3f3f3;"></div>
+              <div class="w-full r-3x profileP" ng-click="pick()" style="height:214px;background-color:#f3f3f3;"></div>
             </div>
             <div class="photo-pickable" ng-if="uphotos[0] != null">
-              <div class="w-full r-3x profileP" ng-class="{grayScale: uphotos[0].approved == 0}" style="height:200px;background-color:#f3f3f3;background-image:url({{trustPhoto(uphotos[0].photo)}})"></div>
+              <div class="w-full r-3x profileP" ng-class="{grayScale: uphotos[0].approved == 0}" style="height:214px;background-color:#f3f3f3;background-image:url({{trustPhoto(uphotos[0].photo)}})"></div>
             </div>
         </div>
 		
@@ -62,7 +62,7 @@
     </div>  
     <div class="list m-n">
       <div class="item item-divider b-none"></div>
-      <div class="item item-divider b-none text-u-c comforta" data-lid="135"></div>
+      <div class="item item-divider b-none text-u-c comforta" data-lid="135" style="color: #ff0083; font-size: 21px; font-weight: 700;"></div>
 	 
       <div class="item" >
 	    <span data-lid="26" ></span>
@@ -91,7 +91,7 @@
 
       <div class="list m-n " ng-repeat="q in questions"  ng-click="updateUserQuestion(q,q.answers)" ng-if="q.method == 'text'">
           <div class="item item-divider b-none"></div>
-          <div class="item item-divider b-none text-u-c comforta">{{q.question}}</div>         
+          <div class="item item-divider b-none text-u-c comforta" style="color: #ff0083; font-size: 21px; font-weight: 700;">{{q.question}}</div>         
           <div class="item">
             <textarea style="width:100%;font-size:16px;line-height: 22px">{{q.userAnswer}}</textarea>
           </div>

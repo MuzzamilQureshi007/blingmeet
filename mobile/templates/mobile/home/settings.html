@@ -25,15 +25,15 @@
  <ion-content class="animated fadeIn">
     <div class="list m-n">
       <div class="item item-divider b-none"></div>
-      <div class="item item-divider b-none text-u-c comforta">{{alang[84].text}}</div>
+      <div class="item item-divider b-none text-u-c comforta" style="color: #F23071;font-size: 21px;font-weight: 700;">{{alang[84].text}}</div>
       
-      <div class="item" horizontal layout center>
+      <div class="item" horizontal layout center style="background: rgb(244,120,91);background: linear-gradient(270deg, rgba(244,120,91,1) 0%, rgba(242,48,113,1) 100%);">
         <div class="row no-padder" ng-click="openChangeLocModal()">
-          <div class="col-25 comforta">
+          <div class="col-25 comforta" style="font-size: 21px; font-weight: 700; color: white;">
             {{alang[85].text}}
           </div>
           <div class="col-75 text-right comforta">
-            <input style="border:none;float:right;" ng-value="me.city"  />
+            <input style="border:none; text-align: end; background: none; font-size: 18px; color: white;" ng-value="me.city"  />
           </div>
         </div>
       </div>
@@ -51,12 +51,12 @@
         </div>
       </div>
 
-      <div class="item" ng-click="updateGender()" horizontal layout center>
+      <div class="item" ng-click="updateGender()" horizontal layout center style="background: rgb(244,120,91);background: linear-gradient(270deg, rgba(244,120,91,1) 0%, rgba(242,48,113,1) 100%);">
         <div class="row no-padder">
-          <div class="col-40 comforta">
+          <div class="col-40 comforta" style="font-size: 21px;color: white;font-weight: 700;">
             {{alang[90].text}}
           </div>
-          <div class="col-60 text-right comforta">
+          <div class="col-60 text-right comforta" style="font-size: 18px; color: white;">
              {{gender}}
             <div class="text-xs text-muted"></div>
           </div>
